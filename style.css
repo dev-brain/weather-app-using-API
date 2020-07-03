@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('weather2blur.jpg');
+    /* backdrop-filter: blur(5px); */
+    background-size: cover;
+    background-color: rgba(204, 204, 204, 0.9);
+    height: 100vh;
+    color: white;
+    /* position: fixed; */
+}
+.totalcontent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.3);
+    width: 350px;
+    height: 370px;
+    margin: auto;
+    vertical-align: middle;
+    margin-top: 10%;
+    /* margin: auto 50px; */
+    border-radius: 10px;
+}
+.cityenter{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 25px;
+    width: 97%;
+    font-size: 15px;
+    border-radius: 10px 0px 10px 0px;
+    border: none;
+    border-bottom: 5px solid rgb(121, 197, 223);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: 0.2s ease-out;
+    outline: none;
+    /* color: white; */
+}
+.cityinput{
+    width: 90%;
+}
+.city{
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 5px rgba(0,0,0,0.4);
+}
+.cityenter:focus{
+    color: rgb(59, 54, 54);
+    font-size: 16px;
+    /* font-weight: bold; */
+}
+.lol , .date ,.temprature , .weather , .hilow{
+    align-items: center;
+    text-align: center;
+    /* text-shadow: 2px 5px rgba(0,0,0,0.2); */
+}
+.date , .temprature {
+    margin-bottom: 15px;
+    margin-top: 3px;
+}
+.temprature{
+    font-size: 50px;
+    font-weight: 500;
+    text-shadow: 2px 5px rgba(0,0,0,0.4);
+    font-weight: 600;
+}
+
+.hilow{
+    font-size: 25px;
+}
+
+
+.weather , .date{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.weather{
+    margin-bottom: 5px;
+}
+
+@media (max-width: 700px){
+    .totalcontent{
+        margin-top: 45%;
+        /* background-image: url('weather.jpg'); */
+    }
+    body{
+        background-image: url('weather2.jpg') ;
+        height: 100vh;
+    }
+}
